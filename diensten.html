@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-99REZ2DLYZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-99REZ2DLYZ');
+    </script>
+    <meta charset="UTF-8">
+    <title>Diensten | Van Leeuwen Webdesign – Websites voor zzp'ers, ondernemers & verenigingen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Ontdek de webdesign diensten van Van Leeuwen Webdesign: websites laten maken, onderhoud, domeinnaamadvies en meer. Persoonlijke service voor zzp'ers, ondernemers en verenigingen in Delft.">
+    <meta name="keywords"
+        content="website laten maken, webdesign Delft, diensten webdesign, onderhoud website, domeinnaam advies">
+    <link rel="canonical" href="https://www.vanleeuwenwebdesign.nl/diensten.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="header-logo">
+                <a href="index.html" class="logo-link"> <img src="images/logo/logo.png" alt="Van Leeuwen Design Logo"
+                        class="logo-img">
+                    <div class="logo-text">Van Leeuwen <span>Webdesign</span></div>
+                </a>
+                <a href="tel:+31624270103" class="phone-link"> <i class="fa-solid fa-phone"></i> +31 6 24270103</a>
+            </div>
+            <nav>
+                <a href="diensten.html" class="active">Diensten</a>
+                <a href="over_mij.html">Over mij</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div>
+                    <h1>Wat ik voor je kan doen?</h1>
+                    <p class="section-subtitle">Geen standaard template, maar een website die past bij jou of jouw
+                        organisatie.</p>
+                    <div class="grid-3">
+                        <div class="card">
+                            <h2>Website laten maken</h2>
+                            <p>Een complete website met een helder ontwerp, duidelijke structuur en teksten die jouw
+                                verhaal vertellen. </p> <strong>Voor ondernemers die online professioneel voor de dag
+                                willen
+                                komen.</strong>
+                        </div>
+                        <div class="card">
+                            <h2>Onderhoud & updates</h2>
+                            <p>Geen zorgen meer over updates, veiligheid en kleine aanpassingen. Ik houd je site
+                                up-to-date. </p> <strong>Ideaal als je zelf geen tijd of zin hebt in techniek.</strong>
+                        </div>
+                        <div class="card">
+                            <h2>Meedenken over inhoud</h2>
+                            <p> Samen kijken we naar jouw doelgroep, boodschap en structuur. Zo wordt je website meer
+                                dan
+                                alleen “mooi”. </p> <strong>Focus op resultaat: meer vertrouwen, meer
+                                aanvragen.</strong>
+                        </div>
+                        <div class="card">
+                            <h2>Domeinnaam kiezen & registreren</h2>
+                            <p> Ik ondersteun je bij het kiezen van een goede domeinnaam en verzorg de registratie.
+                                Inclusief advies over webhosting en het juiste domeintype.
+                            </p> <strong>Ideaal als je nog geen website hebt en alle stappen samen wilt zetten.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Voorbeeldprojecten</h2>
+                <p class="section-subtitle">Deze demo-sites laten zien wat ik voor jou of jouw organiesatie kan maken.
+                </p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-tag">Demo</div>
+                        <div class="portfolio-title">Kapsalon aan de Gracht</div>
+                        <div class="portfolio-desc"> Een frisse, moderne site voor een lokale kapper met prijslijst,
+                            fotogalerij en contactformulier. </div>
+                        <div class="portfolio-tech">One-page ontwerp · Mobielvriendelijk</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-tag">Demo</div>
+                        <div class="portfolio-title">Coachpraktijk Groei</div>
+                        <div class="portfolio-desc"> Rustige, overzichtelijke website met diensten, over-mij pagina en
+                            mogelijkheid om een kennismaking te plannen. </div>
+                        <div class="portfolio-tech">Focus op vertrouwen · Heldere structuur</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-tag">Demo</div>
+                        <div class="portfolio-title">Lokale winkel De Hoek</div>
+                        <div class="portfolio-desc"> Productoverzicht, openingstijden en routebeschrijving voor een
+                            buurtwinkel die beter gevonden wil worden. </div>
+                        <div class="portfolio-tech">Lokale vindbaarheid · Praktische info</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <script src="/js/nav.js"></script>
+
+</body>
+
+</html>

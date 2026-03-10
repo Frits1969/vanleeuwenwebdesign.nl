@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-99REZ2DLYZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-99REZ2DLYZ');
+    </script>
+    <meta charset="UTF-8">
+    <title>Over mij | Van Leeuwen Webdesign – Persoonlijke webdesigner voor zzp'ers & verenigingen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Maak kennis met Frits van Leeuwen, zelfstandig webdesigner in Delft. Lees hoe ik eenvoudige, effectieve websites maak voor zzp'ers, ondernemers en verenigingen.">
+    <meta name="keywords" content="over mij, webdesigner Delft, Frits van Leeuwen, persoonlijke webdesigner">
+    <link rel="canonical" href="https://www.vanleeuwenwebdesign.nl/over_mij.html">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="header-logo">
+                <a href="index.html" class="logo-link"> <img src="images/logo/logo.png" alt="Van Leeuwen Design Logo"
+                        class="logo-img">
+                    <div class="logo-text">Van Leeuwen <span>Webdesign</span></div>
+                </a>
+                <a href="tel:+31624270103" class="phone-link"> <i class="fa-solid fa-phone"></i> +31 6 24270103</a>
+            </div>
+            <nav>
+                <a href="diensten.html">Diensten</a>
+                <a href="over_mij.html" class="active">Over mij</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Over Van Leeuwen <span>Webdesign</span></h1>
+                    <div class="about-content-grid">
+                        <div class="about-image-container">
+                            <img src="images/frits-profiel.png" alt="Frits van Leeuwen" class="about-image-small">
+                        </div>
+                        <div>
+                            <p class="lead"><strong>Wie ben ik?</strong><br>
+                                Ik ben Frits van Leeuwen, zelfstandig webdesigner met een grote interesse in hoe mensen
+                                en
+                                organisaties zich online presenteren. Na jarenlang websites te hebben gebouwd voor mijn
+                                eigen
+                                projecten en voor mensen in mijn omgeving, merkte ik hoe leuk ik het vind om anderen te
+                                helpen
+                                met iets waar zij vaak tegenop zien: een duidelijke, moderne website die werkt zoals het
+                                hoort.<br>
+
+                                Die ervaring heeft me doen besluiten om er echt mijn werk van te maken. Ik richt me op
+                                zzp’ers,
+                                kleine ondernemers en verenigingen die behoefte hebben aan een website die professioneel
+                                oogt,
+                                maar niet ingewikkeld hoeft te zijn. Geen vakjargon, geen onnodige complexiteit, gewoon
+                                een
+                                helder proces en een eindresultaat waar jij je goed bij voelt.
+                            </p>
+                            <p class="lead"><strong>Hoe ga ik te werk?</strong><br>
+                                Een website begint voor mij altijd met luisteren. Tijdens een korte kennismaking
+                                bespreken we
+                                wie je bent, wat je doet, wie je wilt bereiken en wat je website voor jou moet gaan
+                                betekenen.
+                                Op basis daarvan maak ik een voorstel dat past bij jouw stijl, jouw doelen en jouw
+                                organisatie.<br>
+
+                                Daarna werk ik stap voor stap aan het ontwerp en de structuur. Ik denk mee over inhoud,
+                                navigatie en uitstraling, en ik zorg dat alles logisch en prettig werkt voor jouw
+                                bezoekers. Jij
+                                blijft betrokken bij elke fase, zodat het eindresultaat echt voelt als jouw website,
+                                niet als
+                                iets dat je “erbij” hebt gekregen.</p>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <ul>
+                            <li>Heldere communicatie, geen verrassingen achteraf</li>
+                            <li>Ik denk mee over inhoud, niet alleen over het designs</li>
+                            <li>Ook na oplevering kun je bij mij terecht met vragen</li>
+                        </ul>
+
+                    </div>
+                    <div class="hero-actions"><a href="contact.html" class="btn btn-primary">Vrijblijvend
+                            kennismaken</a>
+                    </div>
+                    <p class="hero-note">Snelle reactie op je bericht.</p>
+                </div>
+                <div class="hero-card">
+                    <h2>Waarom klanten voor mij kiezen:</h2>
+                    <ul>
+                        <li>Persoonlijk contact met één aanspreekpunt</li>
+                        <li>Rustige, overzichtelijke websites zonder poespas</li>
+                        <li>Ik leg dingen uit in gewone taal</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <script src="/js/nav.js"></script>
+
+</body>
+
+</html>
