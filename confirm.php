@@ -40,6 +40,7 @@ $bericht = nl2br($bericht_raw);
             </div>
             <nav>
                 <a href="diensten.html">Diensten</a>
+                <a href="prijzen.html">Prijzen</a>
                 <a href="over_mij.html">Over mij</a>
                 <a href="contact.html" class="active">Contact</a>
             </nav>

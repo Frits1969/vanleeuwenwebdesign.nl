@@ -621,3 +621,87 @@ footer a:hover {
         padding-top: 40px;
     }
 }
+
+/* Prijzen Pagina */
+.pricing-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.price-tag {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card.featured::before {
+    content: "Populair";
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: var(--active);
+    color: var(--primary);
+    padding: 5px 35px;
+    transform: rotate(45deg);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.info-box {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e1e6f0;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.info-box h2 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-box ul {
+    margin-top: 15px;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+}
+
+.check-list li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
