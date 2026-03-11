@@ -11,14 +11,22 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     die("Formulier niet correct verzonden.");
 }
 
-// Laad environment variabelen
+// Laad environment variabelen handmatig (parse_ini_file kan struikelen over speciale tekens zoals !)
 $envFile = __DIR__ . '/.env';
-if (!file_exists($envFile)) {
-    die("Configuratiefout: .env bestand ontbreekt.");
+$dotenv = [];
+if (file_exists($envFile)) {
+    $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($lines as $line) {
+        if (strpos(trim($line), '#') === 0)
+            continue;
+        $parts = explode('=', $line, 2);
+        if (count($parts) === 2) {
+            $dotenv[trim($parts[0])] = trim($parts[1], " \t\n\r\0\x0B\"'");
+        }
+    }
 }
 
-$dotenv = parse_ini_file($envFile);
-if (!$dotenv || !isset($dotenv['MAIL_PASSWORD'])) {
+if (!isset($dotenv['MAIL_PASSWORD'])) {
     die("Configuratiefout: Mailgegevens niet gevonden in .env.");
 }
 
@@ -74,6 +82,10 @@ $bericht
     <meta charset="UTF-8">
     <title>Bericht verzonden | Van Leeuwen Webdesign</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google tag (gtag.js) -->
